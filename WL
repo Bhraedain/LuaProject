@@ -1,1 +1,1 @@
-{"rafa_br34","sougey_BR"}
+return {"rafa_br34","sougey_BR"}
