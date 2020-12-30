@@ -1,1 +1,1 @@
-WhiteListed = {"rafa_br34","sougey_BR"}
+{"rafa_br34","sougey_BR"}
