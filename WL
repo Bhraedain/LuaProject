@@ -1,0 +1,1 @@
+WhiteListed = {"rafa_br34","sougey_BR"}
