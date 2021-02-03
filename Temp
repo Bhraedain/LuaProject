@@ -1,0 +1,22 @@
+local PlayerMouse = game:GetService("Players").LocalPlayer:GetMouse()
+local WinRarTool = Instance.new("Tool",game:GetService("Players").LocalPlayer.Backpack)
+WinRarTool.RequiresHandle = false
+WinRarTool.Name = "WinRar Be Like:"
+WinRarTool.ToolTip = "-The LAGGY Tool"
+
+WinRarTool.Activated:Connect(function()
+if PlayerMouse.Target then
+local GCP = PlayerMouse.Target:GetConnectedParts(true)
+local MainPart = PlayerMouse.Target
+for k,i in ipairs(GCP) do
+wait(0.1)
+local ohInstance1 = i
+local ohInstance2 = MainPart
+local ohCFrame3 = CFrame.new(0,0,0)
+local ohCFrame4 = CFrame.new(0,0,0)
+local ohNumber5 = 0.01
+
+game:GetService("ReplicatedStorage").Remotes.ClientMakeWeldJoint:FireServer(ohInstance1, ohInstance2, ohCFrame3, ohCFrame4, ohNumber5)
+end
+end
+end)
